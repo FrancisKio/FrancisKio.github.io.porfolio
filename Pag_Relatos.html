@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Modelado</title>
+<link rel="stylesheet" type="text/css" href="Style_shet_mi_pag_web.css" media="all"/>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="navegacion" id="navbar">
+			<ul class="menu">
+				<li><a href="Index.html">Volver a inicio</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="simbolo">
+		<img  src="Simbolo.jpg">
+	</section>
+	<section>
+		<section class="Historias"> 
+			<article class="cabeceras">
+			El Reino de Ul Rigg... Proximamente.
+			</article>
+				<article><p class="CuerpoTexto"> Historia Fantastica basada en mis experiencias en la Utad. La historia sera escrita en verano y se presentara por capitulos el curso que viene.
+				</p></article>
+		</section>
+		<section class="Historias"> 
+			<article class="cabeceras">
+			El rico Altruista... Proximamente.
+			</article>
+				<article><p class="CuerpoTexto"> Ganar al sistema con el sistema... esta es la historia utópica sobre como un hombre forja su fortuna y con ella arregla el mundo, entre otras cosas.
+				</p></article>
+		</section>
+		<section class="Historias"> 
+			<article class="cabeceras">
+			La Huesped Muda... Proximamente.
+			</article>
+				<article><p class="CuerpoTexto"> Relato epistolar, que relata la juventud del protagonista y su transición hacia la madurez.
+				</p></article>
+		</section>
+	</section>
+	<footer id="footer">
+		<p align="right" style="padding-right: 4em;">&copy; 2018. FrancisKio by Fran Armas Perona</p>
+	</footer>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	} 
+	</script>
+</body>
+</html>

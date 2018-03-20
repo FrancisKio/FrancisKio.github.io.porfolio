@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FrancisKio</title>
+<link rel="stylesheet" type="text/css" href="Style_shet_mi_pag_web.css" media="all"/>
+</head>
+	<body>
+	<header id="header">
+		<nav class="navegacion" id="navbar">
+			<ul class="menu">
+				<li><a href="#SobreMi" >Inicio</a></li>
+				<li><a href="#trabajos" >Mis Trabajos</a></li>
+				<li><a href="#contacto" >Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="SobreMi" class="fila">		
+		<section id="Descripcion" class="texto_sobreMi">
+			<br>
+			<article class="center">
+				<img id="MiFoto" src="Yo.jpg">
+			</article>
+			<br>
+			<article id="descripcionyo">
+				<p id="inicio_descripcion" class="CuerpoTexto">Una breve descripcion de mi mismo:</p>
+				<p class="CuerpoTexto">
+					<br>
+					<br>
+					Me llamo Francisco Armas Perona.  Soy una persona que busca constantes retos, que además de autocomplacerme, me hagan crecer y progresar laboral y personalmente. Creo que la unión hace la fuerza y que un grupo ambicioso puede llegar a cambiar el mundo. Además disfruto creando y más aún si es en grupo.
+					<br>
+					<br>
+					En mi vida tengo dos pilares fundamentales de los que emanan el resto de mi persona. El primer es Kaizen que significa mejora constante, siempre hay algo que se puede mejorar interna y exteriormente. Y el segundo se basa en la eficiencia, es decir, resolver los problemas que vayan surgiendo en el día a día de la forma más rápida posible y empleando el mínimo de recursos. De forma que exportaría estos hábitos a la empresa.
+				</p>
+			</article>
+		</section>
+		<section id="Curriculum" class="texto_sobreMi">
+			<article class="cabeceras">
+				Curriculum
+			</article>
+			<embed id="pdf" src="CV-Europass-20171116-ArmasPerona-EN.pdf" width="100%" height="700" type="application/pdf">
+		</section>
+	</div>
+	<div id="trabajos">
+		<div class="cabeceras">Mis Trabajos</div>
+		<section id="up" class="fila">
+			<section>
+				<figure><a href="Pag_Modelado.html"><img class="img" src="Modelado.jpeg"></a></figure>
+				<span class="tximg">Modelado</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Zbrush.html"><img class="img" src="Zbrush.jpg"></a></figure>
+				<span class="tximg">Zbrush</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Acabados.html"><img class="img" src="Acabados.jpeg"></a></figure>
+				<span class="tximg">Acabados</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Animacion.html"><img class="img" src="Animacion.gif"></a></figure>
+				<span class="tximg">Animación</span>
+			</section>	
+		</section>
+		<section id="down" class="fila">
+			<section>
+				<figure><a href="Pag_Concept.html"><img class="img" src="Concept.jpg"></a></figure>
+				<span class="tximg">Concept Art</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Unity.html"><img class="img" src="Unity.jpg"></a></figure>
+				<span class="tximg">Unity</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Photoshop.html"><img class="img" src="Photoshop.jpg"></a></figure>
+				<span class="tximg">Photoshop</span>
+			</section>
+			<section>
+				<figure><a href="Pag_Relatos.html"><img class="img" src="Historias.jpg"></a></figure>
+				<span class="tximg">Relatos</span>
+			</section>	
+		</section>
+		<section id="demoreel" class="fila">
+			<article class="Demo">Demo</article>
+			<article>
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/25z9khtalc8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</article>
+			<article class="Demo">Reel</article>
+		</section>	
+	</div>
+	<div id="contacto">
+		<div class="cabeceras"> Contacto</div>
+		<br>
+		<div class="fila">
+			<div class="col_1"></div>
+			<div class="col_1">
+			<form class="contacto_form">
+				<label>Nombre: </label><input type="text" name="full_name">
+				<br>
+				<label>Teléfono: </label><input type="text" name="phone">
+				<br>
+				<label>Email: </label><input type="email" name="email">
+				<br>
+				<label>Asunto: </label><input type="text" name="subject">
+				<br>
+				<label>Mensaje: </label><textarea style="resize: none;"></textarea>	
+				<br>
+				<div align="center" style="margin-top: 10px;"><button type="submit">Enviar</button></div>
+			</form>
+			</div>
+			<div class="col_1"></div>
+		</div>
+		<br>
+	</div>
+	<footer id="footer">
+		<p align="right" style="padding-right: 4em;">&copy; 2018. FrancisKio by Fran Armas Perona</p>
+	</footer>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	} 
+	</script>
+</body>
+
+</html>

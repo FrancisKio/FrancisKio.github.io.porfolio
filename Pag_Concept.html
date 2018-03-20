@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Concept Art</title>
+<link rel="stylesheet" type="text/css" href="Style_shet_mi_pag_web.css" media="all"/>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="navegacion" id="navbar">
+			<ul class="menu">
+				<li><a href="Index.html">Volver a inicio</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<figure><img class="Model" src="Concept.jpg"></figure>
+		<figure><img class="Model" src="Concept_02.jpg"></figure>
+	</section>
+	<footer id="footer">
+		<p align="right" style="padding-right: 4em;">&copy; 2018. FrancisKio by Fran Armas Perona</p>
+	</footer>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	} 
+	</script>
+</body>
+</html>
